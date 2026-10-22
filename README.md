@@ -47,3 +47,16 @@
 ### 🌐 ポートフォリオ / Portfolio
 
 👉 **[https://okiljon04344.github.io/](https://okiljon04344.github.io/)** で制作実績のスクリーンショットや詳しい経歴をご覧いただけます。
+
+---
+
+### 📊 GitHub Stats & 活動状況 (Activity)
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=okiljon04344&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Okiljon's GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=okiljon04344&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top Languages" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=okiljon04344&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="97%" />
+</p>
