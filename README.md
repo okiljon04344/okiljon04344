@@ -15,7 +15,7 @@
 ### 👨‍💻 自己紹介 / About Me
 
 - 🎓 **学歴 (Education):** 岩谷学園 ひがし北海道IT専門学校（地域未来情報テクノロジー科・2027年3月卒業見込）
-- 🧭 **PM経験 (Project Management):** 4名チームのPMとして、韓国で事業を展開する企業向けECアプリ「**Million Halal**」を約6か月で開発・納品
+- 🧭 **PM経験 (Project Management):** 4名チームのPMとして、韓国で事業を展開する企業向けECアプリ「**Million Halal (MILLION MARKET)**」を受託開発し、約6か月で納品（商用案件のためコード非公開）
 - 🤖 **専門領域 (Focus):** Flutter (Mobile / Web / Desktop) × Firebase × 生成AI (Gemini API) のプロダクト統合
 - 🏆 **受賞歴 (Awards):** 4か国参加 国際ビジネスアイデアコンテスト **チーム第1位**（メンタルヘルス×医師連携アプリの提案）
 - 🗣️ **言語 (Languages):** ウズベク語（母語）、日本語（JLPT N2）、英語
@@ -27,7 +27,7 @@
 | Project | Role / Type | Tech Stack | Overview |
 | :--- | :--- | :--- | :--- |
 | **[EduPlanner AI](https://github.com/okiljon04344/eduplaner_ai)** | 卒業研究・個人開発 | `Flutter` `Riverpod` `go_router` `Firebase` `Gemini API` | 専門学校生向けのAI学習管理アプリ。時間割・課題・進捗グラフ管理に加え、Gemini APIによるAI学習相談とテスト問題の自動生成を搭載。 |
-| **Million Halal (MILLION MARKET)** | 4名チーム開発・**PM** | `Mobile App` `Project Management` `E-Commerce` | 韓国で事業を行う企業からの受託開発プロジェクト。商品検索・注文・セール・ポイント・卸売登録機能を備えたハラール食品ECアプリ。 |
+| **Million Halal (MILLION MARKET)** | 4名チーム開発・**PM** | `Mobile App` `Project Management` `E-Commerce` | 韓国展開企業向けハラール食品ECアプリ（**商用案件のためソースコード非公開**）。4名チームのPMとして要件定義から開発・納品まで主導。商品検索・注文・セール・ポイント・卸売登録機能を実装。 |
 | **[Universal Restaurant App](https://github.com/okiljon04344/restoranapp)** | 個人開発 | `Flutter` `Riverpod` `go_router` `Firebase` `i18n (JA/EN/UZ)` | 顧客用QRオーダー画面・キッチン注文管理・管理者ダッシュボードを統合した多言語対応レストランシステム。 |
 | **[Smart TV Streaming App](https://github.com/okiljon04344/smart_tv_app)** | 個人開発 | `Flutter` `Firebase` `Video Player` `TV UI` | リモコン（D-Pad）フォーカス操作と動画ストリーミング再生に対応したマルチプラットフォームSmart TVアプリケーション。 |
 | **[Insta Clone Lesson](https://github.com/okiljon04344/insta_clone_lesson)** | 学習・個人開発 | `Flutter` `Firebase` `Supabase` `Cloud Firestore` | 写真投稿・いいね・コメント・リアルタイムフィード更新を実装したSNSアプリケーション。 |
