@@ -15,7 +15,7 @@
 
 Flutter × Firebase を中核としたクロスプラットフォーム（Mobile / Web / Desktop / Android TV）エンジニアです。  
 専門学校在学中より、韓国で事業を展開する企業向けECアプリ「**Million Halal (MILLION MARKET)**」の実案件（受託開発・商用資産のためコード非公開）において、**4名チームのプロジェクトマネージャー（PM）兼リードエンジニア**として要件定義・タスク設計・開発マネジメントを行い、約6か月で納品を完了させました。  
-また、卒業研究である「**EduPlanner AI**」では、Firebase Cloud Functions と Google Gemini API を連携させ、学生の学習計画立案・AI相談・理解度テスト生成を全自動化するフルスタックAIアプリを構築。静的解析（`flutter analyze` 0 issues）およびユニット・ウィジェットテスト（118テスト全通過）を徹底した高品質な設計を得意としています。
+また、個人開発プロジェクト「**EduPlanner AI**」では、Firebase Cloud Functions と Google Gemini API を連携させ、学生の学習計画立案・AI相談・理解度テスト生成を全自動化するフルスタックAIアプリを構築。静的解析（`flutter analyze` 0 issues）およびユニット・ウィジェットテスト（118テスト全通過）を徹底した高品質な設計を得意としています。
 
 ---
 
@@ -48,7 +48,7 @@ Flutter × Firebase を中核としたクロスプラットフォーム（Mobile
 
 ---
 
-### ②【卒業研究・個人開発】EduPlanner AI (エデュプランナーAI)
+### ②【個人開発・自主開発】EduPlanner AI (エデュプランナーAI)
 * **リポジトリ:** [https://github.com/okiljon04344/eduplaner_ai](https://github.com/okiljon04344/eduplaner_ai)
 * **使用技術:** Flutter 3.x, Dart, Riverpod, `go_router`, Firebase, Cloud Functions, Google Gemini API
 * **役割:** 企画・設計・開発・テスト（個人開発）

@@ -26,7 +26,7 @@
 
 | Project | Role / Type | Tech Stack | Overview |
 | :--- | :--- | :--- | :--- |
-| **[EduPlanner AI](https://github.com/okiljon04344/eduplaner_ai)** | 卒業研究・個人開発 | `Flutter` `Riverpod` `go_router` `Firebase` `Gemini API` | 専門学校生向けのAI学習管理アプリ。時間割・課題・進捗グラフ管理に加え、Gemini APIによるAI学習相談とテスト問題の自動生成を搭載。 |
+| **[EduPlanner AI](https://github.com/okiljon04344/eduplaner_ai)** | 個人開発（自主開発） | `Flutter` `Riverpod` `go_router` `Firebase` `Gemini API` | 専門学校生向けのAI学習管理アプリ。時間割・課題・進捗グラフ管理に加え、Gemini APIによるAI学習相談とテスト問題の自動生成を搭載。 |
 | **Million Halal (MILLION MARKET)** | 4名チーム開発・**PM** | `Mobile App` `Project Management` `E-Commerce` | 韓国展開企業向けハラール食品ECアプリ（**商用案件のためソースコード非公開**）。4名チームのPMとして要件定義から開発・納品まで主導。商品検索・注文・セール・ポイント・卸売登録機能を実装。 |
 | **[Universal Restaurant App](https://github.com/okiljon04344/restoranapp)** | 個人開発 | `Flutter` `Riverpod` `go_router` `Firebase` `i18n (JA/EN/UZ)` | 顧客用QRオーダー画面・キッチン注文管理・管理者ダッシュボードを統合した多言語対応レストランシステム。 |
 | **[Smart TV Streaming App](https://github.com/okiljon04344/smart_tv_app)** | 個人開発 | `Flutter` `Firebase` `Video Player` `TV UI` | リモコン（D-Pad）フォーカス操作と動画ストリーミング再生に対応したマルチプラットフォームSmart TVアプリケーション。 |
