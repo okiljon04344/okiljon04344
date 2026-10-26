@@ -32,7 +32,7 @@
 | **Million Halal (MILLION MARKET)** | 4名チーム開発・**PM** | `Mobile App` `Project Management` `E-Commerce` | 韓国展開企業向けハラール食品ECアプリ（**商用案件のためソースコード非公開**）。4名チームのPMとして要件定義から開発・納品まで主導。商品検索・注文・セール・ポイント・卸売登録機能を実装。 |
 | **[Universal Restaurant App](https://github.com/okiljon04344/restoranapp)** | 個人開発 | `Flutter` `Riverpod` `go_router` `Firebase` `i18n (JA/EN/UZ)` | 顧客用QRオーダー画面・キッチン注文管理・管理者ダッシュボードを統合した多言語対応レストランシステム。管理者権限は Firestore の admins コレクションで管理し、GitHub Actions で静的解析とテストを自動実行。 |
 | **[Smart TV Streaming App](https://github.com/okiljon04344/smart_tv_app)** | 個人開発 | `Flutter` `Firebase` `Video Player` `TV UI` | リモコン（D-Pad）フォーカス操作と動画ストリーミング再生に対応したマルチプラットフォームSmart TVアプリケーション。管理者は Realtime Database の admins ノードで管理。 |
-| **[Insta Clone Lesson](https://github.com/okiljon04344/insta_clone_lesson)** | 学習・個人開発 | `Flutter` `Firebase` `Supabase` `Cloud Firestore` | 写真投稿・いいね・コメント・リアルタイムフィード更新を実装したSNSアプリケーション。 |
+| **[Insta Clone Lesson](https://github.com/okiljon04344/insta_clone_lesson)** | 学習用 | `Flutter` `Firebase` `Supabase` `Cloud Firestore` | Flutter と Firebase の学習のために作成した Instagram 風 SNS アプリ。写真投稿・いいね・コメント・フォロー・チャットを実装。 |
 
 ---
 

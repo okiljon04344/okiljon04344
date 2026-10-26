@@ -81,20 +81,22 @@
 * **使用技術:** Flutter, Riverpod, `go_router`, Cloud Firestore, Firebase Auth, i18n
 * **主な機能:**
   - 来店客用: テーブルQRコード読み取り、リアルタイム注文・カート管理
-  - キッチン用（KDS）: 注文状況（調理中・配膳済）のリアルタイムステータス更新
-  - 管理者用: 売上集計ダッシュボード、メニュー・在庫・材料原価管理
-  - 日本語・英語・ウズベク語の3言語リアルタイムローカライズ
+  - キッチン用（KDS）: 新規注文のリアルタイム受信と調理ステータス更新（受付 → 調理中 → 提供準備完了）
+  - 管理者用: メニュー・カテゴリ管理、在庫（食材・最小在庫アラート）管理、テーブル状況、売上・注文ダッシュボード
+  - 日本語・英語・ウズベク語の3言語対応（ARB によるローカライズ）
 * **セキュリティ・品質:**
   - 管理者権限は Firestore の `admins/{uid}` ドキュメントの有無で判定（セキュリティルールとアプリで同じ判定）
   - Firestore セキュリティルールで役割ごとの読み書き権限を制御し、GitHub Actions で `flutter analyze`・`flutter test` を自動実行
 
 #### Smart TV Streaming App (Android TV 動画配信プラットフォーム)
 * **リポジトリ:** [https://github.com/okiljon04344/smart_tv_app](https://github.com/okiljon04344/smart_tv_app)
-* **使用技術:** Flutter, Android TV 10-foot UI, D-Pad Remote Navigation, `video_player`, YouTube Player
+* **使用技術:** Flutter, Android TV 10-foot UI, D-Pad Remote Navigation, Firebase Realtime Database, Firebase Auth, `video_player`, `youtube_player_flutter`
 * **主な機能:**
-  - **専用 TV リモコンエンジン (`tv_key_helper.dart`):** リモコンの十字キー（上下左右）、決定キー（Select / Enter）、戻るキーの2重発火を防止し、フォーカス状態を視覚的にアニメーション表示。
-  - ハイブリッド動画再生（MP4およびYouTubeストリーム）、10秒スキップ、視聴進捗自動保存（Continue Watching）。
-  - リモコン1タップでログイン不要で全機能を体験できる **TV Demo / ゲストモード** 搭載。
+  - **リモコン操作 (`tv_key_helper.dart`):** 決定キー・戻るキーの KeyDown / KeyUp 二重発火を防止し、KeyUp のみ届くリモコンにも対応。画面ごとに `FocusScope` でフォーカス移動を管理。
+  - 動画再生: YouTube 動画は `youtube_player_flutter`、それ以外はアプリ同梱の動画を `video_player` で再生。10秒スキップと再生位置の保存に対応。
+  - カタログは Realtime Database を購読し、取得できない場合はアプリ内サンプルデータにフォールバック。お気に入りはログイン時に Realtime Database と同期。
+  - ログイン不要で操作を試せる **TV Demo / ゲストモード**。多言語 UI（ウズベク語・ロシア語・英語）。
+  - ユニットテスト（キー判定・二重発火防止、Realtime Database データ変換）を作成し、GitHub Actions で `flutter analyze`・`flutter test` を自動実行。
   - 管理者は Realtime Database の `admins` ノードで管理し、Database ルールで書き込みを制限。
 
 ---
