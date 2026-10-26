@@ -1,4 +1,4 @@
-# Hi there, I'm Okiljon Nabev (ナビエフ・オキルジョン) 👋
+# Hi there, I'm Okiljon Nabiev (ナビエフ・オキルジョン) 👋
 
 [![Portfolio Website](https://img.shields.io/badge/🌐_Portfolio-okiljon04344.github.io-10a37f?style=for-the-badge)](https://okiljon04344.github.io/)
 [![開発経歴書](https://img.shields.io/badge/開発経歴書-SKILL__SHEET-6C63FF?style=for-the-badge)](SKILL_SHEET_JA.md)
