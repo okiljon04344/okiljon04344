@@ -40,7 +40,7 @@
 | **状態管理** | Riverpod, Provider, StateNotifier | 個人開発で feature 単位のレイヤー分割（UI / Provider / Repository）を実践 |
 | **バックエンド・BaaS** | Firebase (Auth, Firestore, Cloud Functions, FCM, Realtime DB), Supabase | 個人開発でセキュリティルール・クエリ最適化に取り組み |
 | **AI / LLM 連携** | Google Gemini API (`google_generative_ai`), REST API, Function Calling | EduPlanner AI でプロンプト設計、構造化出力、自動テストを実施 |
-| **CI / CD・ツール** | Git, GitHub, GitHub Actions, Firebase Emulator, Android Studio, VS Code, Figma | 個人開発で静的解析・ユニットテスト・セキュリティルールテストを自動実行 |
+| **CI / CD・ツール** | Git, GitHub, GitHub Actions, Firebase Emulator, Android Studio, VS Code, Figma | 個人開発で静的解析・ユニット／ウィジェットテストを GitHub Actions で自動実行 |
 | **語学力** | **日本語: JLPT N2**、ウズベク語: ネイティブ、英語: 技術ドキュメント読解・会話 | 多国籍チームでのコミュニケーションを経験 |
 
 ---
@@ -85,8 +85,8 @@
   - 管理者用: 売上集計ダッシュボード、メニュー・在庫・材料原価管理
   - 日本語・英語・ウズベク語の3言語リアルタイムローカライズ
 * **セキュリティ・品質:**
-  - 管理者・キッチン権限を Firebase Auth **Custom Claims** で管理（メールアドレス判定を廃止）
-  - 注文データの形式・金額・ステータス遷移を `firestore.rules` で検証し、Firestore Emulator 上の自動テスト（14件）を GitHub Actions で実行
+  - 管理者権限は Firestore の `admins/{uid}` ドキュメントの有無で判定（セキュリティルールとアプリで同じ判定）
+  - Firestore セキュリティルールで役割ごとの読み書き権限を制御し、GitHub Actions で `flutter analyze`・`flutter test` を自動実行
 
 #### Smart TV Streaming App (Android TV 動画配信プラットフォーム)
 * **リポジトリ:** [https://github.com/okiljon04344/smart_tv_app](https://github.com/okiljon04344/smart_tv_app)
@@ -95,7 +95,7 @@
   - **専用 TV リモコンエンジン (`tv_key_helper.dart`):** リモコンの十字キー（上下左右）、決定キー（Select / Enter）、戻るキーの2重発火を防止し、フォーカス状態を視覚的にアニメーション表示。
   - ハイブリッド動画再生（MP4およびYouTubeストリーム）、10秒スキップ、視聴進捗自動保存（Continue Watching）。
   - リモコン1タップでログイン不要で全機能を体験できる **TV Demo / ゲストモード** 搭載。
-  - 管理者権限を **Custom Claims** で管理し、Realtime Database ルールを Emulator 上の自動テスト（8件）で検証。
+  - 管理者は Realtime Database の `admins` ノードで管理し、Database ルールで書き込みを制限。
 
 ---
 
@@ -108,7 +108,8 @@
 ただAPIを呼び出すだけでなく、Cloud Functions を介したセキュアな設計や、Gemini API のストリーミング生成、構造化JSONレスポンスのパースなど、実用的なAI機能の組み込みに取り組んできました。
 
 ### ③ 保守性・セキュリティとテスト自動化へのこだわり
-「動けばいい」コードではなく、Riverpod を用いた feature 単位の保守しやすいディレクトリ構成を心がけています。主要リポジトリ（EduPlanner AI・Restaurant App・Smart TV App）には GitHub Actions を導入し、静的解析（`flutter analyze`）・ユニット／ウィジェットテスト・セキュリティルールのテストを自動実行しています。
+「動けばいい」コードではなく、Riverpod を用いた feature 単位の保守しやすいディレクトリ構成を心がけています。主要リポジトリ（EduPlanner AI・Restaurant App・Smart TV App）には GitHub Actions を導入し、静的解析（`flutter analyze`）とユニット／ウィジェットテストを自動実行しています。
+開発では AI コーディング支援ツールも活用していますが、設計・コードレビュー・テスト・最終的な判断は自分で行っています。
 
 ---
 
